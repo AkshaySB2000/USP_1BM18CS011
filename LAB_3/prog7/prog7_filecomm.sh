@@ -1,7 +1,7 @@
 #!/bin/sh
 #Program to perform file test and display their attributes after passing two parameters
 
-if [ $# -eq 0 -o $# -eq 1 ]
+if [ $# -lt 2 -o $# -gt 2 ]
 then
 	echo "Wrong number of arguments passed. Only 2 arguments are to be passed"
 else
